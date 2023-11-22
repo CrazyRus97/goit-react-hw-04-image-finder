@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import ScrollToTop from 'react-scroll-up';
 
 export const ModalImg = styled.img`
   width: 100%;
