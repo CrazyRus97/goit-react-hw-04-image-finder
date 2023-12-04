@@ -10,6 +10,10 @@ import { InitialStateGallery } from '../InitialStateGallery/InitialStateGallery'
 import { Button } from 'components/Button/Button';
 import { errorMessages } from 'constants/errorMessages';
 
+import { ModalPicture } from '../ImageGalleryItem/ImageGalleryItem';
+import { ModalDescr } from 'components/App.styled';
+import { Modal } from 'components/Modal/Modal';
+
 const Status = {
   IDLE: 'idle',
   PENDING: 'pending',
@@ -22,6 +26,11 @@ export const ImageGallery = ({ page, value, onLoadMore }) => {
   const [error, setError] = useState(null);
   const [status, setStatus] = useState(Status.IDLE);
   const [totalPages, setTotalPages] = useState(0);
+
+  // const [showModal, setShowModal] = useState(false);
+  // const toggleModal = () => {
+  //   setShowModal(!showModal);
+  // };
 
   useEffect(() => {
     if (!value) {
