@@ -1,9 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
-import { createPortal } from 'react-dom';
 import { ModalBackdrop, ModalContent } from './Modal.styled';
-
-const modalRoot = document.querySelector('#modal-root');
 
 export const Modal = ({ onModalClose, children }) => {
   useEffect(() => {
@@ -23,11 +20,10 @@ export const Modal = ({ onModalClose, children }) => {
     }
   };
 
-  return createPortal(
+  return (
     <ModalBackdrop onClick={handleBackdropeClick}>
       <ModalContent>{children}</ModalContent>
-    </ModalBackdrop>,
-    modalRoot
+    </ModalBackdrop>
   );
 };
 
