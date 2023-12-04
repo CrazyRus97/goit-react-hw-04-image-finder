@@ -10,9 +10,9 @@ import { InitialStateGallery } from '../InitialStateGallery/InitialStateGallery'
 import { Button } from 'components/Button/Button';
 import { errorMessages } from 'constants/errorMessages';
 
-import { ModalPicture } from '../ImageGalleryItem/ImageGalleryItem';
-import { ModalDescr } from 'components/App.styled';
-import { Modal } from 'components/Modal/Modal';
+// import { ModalPicture } from '../ImageGalleryItem/ImageGalleryItem';
+// import { ModalDescr } from 'components/App.styled';
+// import { Modal } from 'components/Modal/Modal';
 
 const Status = {
   IDLE: 'idle',
